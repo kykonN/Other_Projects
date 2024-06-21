@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-s6FqqbRC1cy5NfiGW1f70hT+6/5eoyC5B4QZGhkAeh5+gzX9e7okD+QGlv2vr67StNjBCN6QGN8YAnJbUhS37w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lightbox2 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-h4Ck0e2b+md7Nbr2n5u+5g0zJUjO0oB2+zEj/V4Se7oJlnE+XDNpN6Q8b+OPym0Nhe6n4+5h7ebIibXsQ1A36w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS para os cards -->
+    <style>
+        .pistas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+        .pistas-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+        .pistas-card:hover {
+            transform: translateY(-5px);
+        }
+        .pistas-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .pistas-card a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/historia.html">A minha história</a></li>
+            <li><a href="/pistas.html">Pistas</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Adicionar a mensagem de boas-vindas -->
+        <section class="welcome-section">
+            <h1>Bem-Vindo, Destemido Explorador!</h1>
+            <p>Sê bem-vindo à nossa missão épica para encontrar as peças perdidas da máquina de Hefesto! Aqui iniciarás uma jornada emocionante e crucial para ajudar Hércules a recuperar o artefacto perdido na terra dos titãs.</p>
+            <p>Prepara-te para desafios, descobertas e a oportunidade de fazer parte de algo extraordinário. A tua coragem e determinação são fundamentais para o sucesso desta missão!</p>
+            <p>Explora o nosso site, segue as pistas e encontra a tua peça. Lembra-te, juntos somos mais fortes!</p>
+            <p>Boa sorte, explorador, e que esta jornada te conduza à vitória!</p>
+            <p>Canhota amiga,</p>
+            <p>Carlo</p>
+        </section>
+
+        <!-- Espaços para fotos que serão as pistas como cards -->
+        <section class="pistas-section">
+            <h2>Pistas para as Peças Perdidas</h2>
+            <ul class="pistas-grid">
+                <!-- Adicione aqui as fotos que serão as pistas como cards -->
+                <li class="pistas-card">
+                    <a href="img/img1.jpg" data-lightbox="pistas" data-title="Pista 1">
+                        <img src="img/img1-thumbnail.jpg" alt="Pista 1">
+                    </a>
+                </li>
+                <li class="pistas-card">
+                    <a href="img/img2.jpg" data-lightbox="pistas" data-title="Pista 2">
+                        <img src="img/img2-thumbnail.jpg" alt="Pista 2">
+                    </a>
+                </li>
+                <li class="pistas-card">
+                    <a href="img/img3.jpg" data-lightbox="pistas" data-title="Pista 3">
+                        <img src="img/img3-thumbnail.jpg" alt="Pista 3">
+                    </a>
+                </li>
+                <li class="pistas-card">
+                    <a href="img/img4.jpg" data-lightbox="pistas" data-title="Pista 4">
+                        <img src="img/img4-thumbnail.jpg" alt="Pista 4">
+                    </a>
+                </li>
+                <li class="pistas-card">
+                    <a href="img/img5.jpg" data-lightbox="pistas" data-title="Pista 5">
+                        <img src="img/img5-thumbnail.jpg" alt="Pista 5">
+                    </a>
+                </li>
+                <!-- Adicione mais cards conforme necessário -->
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 My Website</p>
+        <ul>
+            <li><a href="#privacy">Política de Privacidade</a></li>
+            <li><a href="#terms">Termos de Serviço</a></li>
+            <li><a href="#contact">Contacte-nos</a></li>
+        </ul>
+    </footer>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-J7JK8lA14lBqL4fNTzIJi0jVE2m9Eh7xvksHg+gDzRIQ51HmUss6NxZxE6Rb+VYw7QpSMVYI4fxO/T5m2Bl5Cg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
